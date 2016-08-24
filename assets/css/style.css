@@ -1,0 +1,98 @@
+body{
+  background-color: black; /*Helps in properly showing the parallax1-image with opacity 0.5*/
+}
+/*Homepage Parallax 1*/
+.parallax1{
+  /*Height set to screen height*/
+  height: 100vh;
+}
+.parallax1-image{ /* Parallax1 Image */
+  /*Position*/
+  position: absolute;
+  z-index: -1;
+  /*Image*/
+  background-image: url('../images/main_bg.jpg');
+  /*Width & Height*/
+  width: 100%;
+  height: inherit;
+  /*Parallax effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Other effects*/
+  opacity: 0.65;
+  box-shadow: 0px 0px 100px 20px black inset;
+}
+/*Homepage Navbar */
+.parallax1 .navbar{  /* Navbar styling */
+  background-color: transparent;
+  border-color: transparent;
+  padding: 40px;
+  font-size: 18px;
+}
+.parallax1 .navbar-toggle{  /* Navbar toggle */
+  border-color: #c8ddff;
+  border-width: 2px;
+}
+.parallax1 .navbar-toggle:hover{  /* Navbar toggle hover */
+  background-color: black;
+}
+.parallax1 .navbar-toggle .icon-bar{  /* Navbar toggle icon bars */
+  background-color: #c8ddff;
+}
+.parallax1 .navbar li a{  /* Navbar links */
+  color: #c8ddff;
+}
+.parallax1 .navbar li a:hover, .parallax1 .navbar li a:focus{  /* Navbar links hover & focus */
+  color: black;
+  background-color: whitesmoke;
+}
+.parallax1 .navbar-brand{ /* Navbar brand/title */
+  color: #c8ddff;
+  font-size: 20px;
+}
+.parallax1 .navbar-brand:hover, .parallax1 .navbar-brand:focus{  /* Navbar links hover & focus */
+  color: black;
+  background-color: whitesmoke;
+}
+.parallax1 .navbar-form, .parallax1 .navbar-collapse{  /* Navbar form/collapse border */
+  border-color: #c8ddff;
+  border-width: 2px;
+}
+/* Heading */
+.parallax1 h1{
+  /*Position*/
+  position: absolute;
+  bottom: 20px;
+  /*Width & Alignment*/
+  width: 100%;
+  text-align: center;
+  /*Styling*/
+  font-family: 'Lobster',cursive;
+  font-size: 50px;
+  color: #c8ddff;
+}
+/*Homepage Bio*/
+#bio{
+  background-color: #c8ddff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+#bio p{
+  margin: 0;
+  padding: 5%;
+}
+
+/*Mobile first approach*/
+/*For screens larger than 768px*/
+@media (min-width: 768px) {
+  /* Heading */
+  .parallax1 h1{
+    font-size:110px;
+  }
+  /*Bio text*/
+  #bio{
+    font-size: 22px;
+  }
+}
