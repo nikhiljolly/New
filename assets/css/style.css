@@ -1,12 +1,66 @@
 body{
-  background-color: black; /*Helps in properly showing the parallax1-image with opacity 0.5*/
+  background-color: #222;
 }
-/*Homepage Parallax 1*/
-.parallax1{
+
+/* Section Title */
+.section-title{
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Section classes */
+.below-navbar{
+  margin-top: 134px;
+}
+
+/*Home Navbar */
+#myNavbar{
+  /*Postioning*/
+  position: absolute; /* So that collapsed nav overlaps everything instead of pushing it down */
+  top: 0;
+  width: 100%;
+  z-index: 1; /* To show it above all other content */
+
+  /* Styling */
+  background-color: transparent;
+  border-color: transparent;
+  padding: 40px;
+  font-size: 18px;
+}
+#myNavbar .navbar-toggle{  /* Navbar toggle */
+  border-color: white;
+  border-width: 2px;
+}
+#myNavbar .navbar-toggle:hover{  /* Navbar toggle hover */
+  background-color: black;
+}
+#myNavbar .icon-bar{  /* Navbar toggle icon bars */
+  background-color: white;
+}
+#myNavbar a{  /* Navbar links */
+  color: white;
+  border: 1px solid transparent; /* To avoid jerk on hover */
+  background-color: transparent;
+}
+#myNavbar a:hover, #myNavbar a:focus{  /* Navbar links hover, focus & active class */
+  color: #428bca;
+  border: 1px solid #428bca;
+  background-color: transparent;
+}
+#myNavbar .navbar-brand{ /* Navbar brand/title */
+  font-size: 20px;
+}
+#myNavbar .navbar-form, #myNavbar .navbar-collapse{  /* Navbar form/collapse border */
+  border-color: white;
+  border-width: 2px;
+}
+
+/*Home Parallax Container*/
+#home .parallax-container{
   /*Height set to screen height*/
   height: 100vh;
 }
-.parallax1-image{ /* Parallax1 Image */
+#home .parallax-image{ /* Home Parallax Image */
   /*Position*/
   position: absolute;
   z-index: -1;
@@ -14,54 +68,16 @@ body{
   background-image: url('../images/main_bg.jpg');
   /*Width & Height*/
   width: 100%;
-  height: inherit;
+  height: 100%;
   /*Parallax effect*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*Other effects*/
-  opacity: 0.65;
-  box-shadow: 0px 0px 100px 20px black inset;
 }
-/*Homepage Navbar */
-.parallax1 .navbar{  /* Navbar styling */
-  background-color: transparent;
-  border-color: transparent;
-  padding: 40px;
-  font-size: 18px;
-}
-.parallax1 .navbar-toggle{  /* Navbar toggle */
-  border-color: #c8ddff;
-  border-width: 2px;
-}
-.parallax1 .navbar-toggle:hover{  /* Navbar toggle hover */
-  background-color: black;
-}
-.parallax1 .navbar-toggle .icon-bar{  /* Navbar toggle icon bars */
-  background-color: #c8ddff;
-}
-.parallax1 .navbar li a{  /* Navbar links */
-  color: #c8ddff;
-}
-.parallax1 .navbar li a:hover, .parallax1 .navbar li a:focus{  /* Navbar links hover & focus */
-  color: black;
-  background-color: whitesmoke;
-}
-.parallax1 .navbar-brand{ /* Navbar brand/title */
-  color: #c8ddff;
-  font-size: 20px;
-}
-.parallax1 .navbar-brand:hover, .parallax1 .navbar-brand:focus{  /* Navbar links hover & focus */
-  color: black;
-  background-color: whitesmoke;
-}
-.parallax1 .navbar-form, .parallax1 .navbar-collapse{  /* Navbar form/collapse border */
-  border-color: #c8ddff;
-  border-width: 2px;
-}
-/* Heading */
-.parallax1 h1{
+
+/* Home Heading */
+#home .parallax-container h1{
   /*Position*/
   position: absolute;
   bottom: 20px;
@@ -71,28 +87,49 @@ body{
   /*Styling*/
   font-family: 'Lobster',cursive;
   font-size: 50px;
-  color: #c8ddff;
-}
-/*Homepage Bio*/
-#bio{
-  background-color: #c8ddff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-}
-#bio p{
-  margin: 0;
-  padding: 5%;
+  color: white;
 }
 
-/*Mobile first approach*/
-/*For screens larger than 768px*/
+/* Home Bio */
+#bio{
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  padding: 5%;
+  text-align: center;
+}
+/* Bio Quotes */
+#bio blockquote{
+  font-size: 20px;
+}
+
+/* Projects */
+.portfolio_item{
+  margin-bottom: 25px;  /* Used to add gap when screen is small in size */
+}
+
+/* Mobile first approach */
+/* For screens larger than 768px */
 @media (min-width: 768px) {
   /* Heading */
-  .parallax1 h1{
+  #home .parallax-container h1{
     font-size:110px;
   }
   /*Bio text*/
   #bio{
     font-size: 22px;
+  }
+  /*Bio Quotes*/
+  #bio blockquote{
+    font-size: 22px;
+  }
+  /* Make row thing it is a table when screen is big */
+  .row {
+    display: table;
+  }
+  [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;;
   }
 }

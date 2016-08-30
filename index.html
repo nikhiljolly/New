@@ -28,54 +28,109 @@
 
   <body>
 
-    <!-- Homepage parallax1 with navbar and text -->
-    <div class="parallax1">
-
-      <!--Parallax Image-->
-      <div class="parallax1-image"></div>
-
-      <!-- Navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Navbar Header on left -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">nikhil jolly</a>
-          </div>
-          <!-- Collapsable navbar -->
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <!-- Navbar right -->
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">bio</a></li>
-              <li><a href="#">projects</a></li>
-              <li><a href="#">journal</a></li>
-            </ul>
-          </div>
-          <!-- Collapsabe navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-default" id="myNavbar">
+      <div class="container-fluid">
+        <!-- Navbar Header on left -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="" class="navbar-brand">nikhil jolly</a>
         </div>
-      </nav>
+        <!-- Collapsable navbar -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- Navbar right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a data-toggle="tab" href="#home">bio</a></li>
+            <li><a data-toggle="tab" href="#projects">projects</a></li>
+            <li><a data-toggle="tab" href="#journal">journal</a></li>
+          </ul>
+        </div>
+        <!-- Collapsabe navbar -->
+      </div>
+    </nav>
 
-      <!-- Heading -->
-      <h1>Nikhil Jolly</h1>
+    <!-- Used for tabs in navbar -->
+    <div class="tab-content">
 
-    </div>
+      <!-- Homepage: parallax and bio -->
+      <div class="tab-pane fade in active" id="home">
 
-    <!-- Bio -->
-    <div class="container-fluid" id="bio">
-      <p class="text-justify">
-        Hi! I'm Nikhil Jolly, a game designer and programmer from India.
-        I aspire to be a renaissance man and am usually found juggling
-        between numereous things that I like to do.</br></br>
-        On a casual day, I spend my time developing games as a freelancer,
-        working on my personal projects and improving my art & composition skills.
-        And ocassionally, I tend to tinker with new things and explore new places.</br></br>
-        More often than not, I spend a lot of time thinking about stuff,
-        listening to music, reading stuff online and improving myself.
-      </p>
+        <!-- Parralax, header text container -->
+        <div class="parallax-container">
+          <!--Parallax Image-->
+          <div class="parallax-image"></div>
+          <!-- Heading -->
+          <h1>Nikhil Jolly</h1>
+        </div>
+
+        <!-- Bio -->
+        <div class="container-fluid" id="bio">
+          <blockquote>
+            <p>Pain is inexhaustible. It’s only people who get exhausted.</p>
+            <footer>Ray Velcoro in <cite>True Detective</cite></footer>
+          </blockquote>
+          <p class="text-justify">
+            Hi! I'm Nikhil Jolly, a game designer and programmer from India.
+            I aspire to be a renaissance man and am usually found juggling
+            between numereous things that I like to do.</br></br>
+            On a casual day, I spend my time developing games as a freelancer,
+            working on my personal projects and improving my art & composition skills.
+            And ocassionally, I tend to tinker with new things and explore new places.</br></br>
+            More often than not, I spend a lot of time thinking,
+            listening to music, reading online and improving myself.
+          </p>
+        </div>
+
+      </div> <!-- Homepage end -->
+
+      <!-- Projects -->
+      <div class="tab-pane fade below-navbar" id="projects">
+        <div class="container-fluid">
+            <h1 class="section-title">Projects</h1>
+
+
+            <!-- 1st row: Two columns -->
+            <div class="row">
+              <!-- Mirrors -->
+              <div class="col-sm-6 portfolio_item" id="mirrors">
+                <img class="img-responsive" src="assets/images/mirrors/cover.jpg" alt="Mirrors"/>
+              </div>
+              <!-- Pizza Craft -->
+              <div class="col-sm-6 portfolio_item">
+                <img class="img-responsive" src="assets/images/pizzacraft/cover.jpg" alt="Pizza Craft"/>
+              </div>
+            </div>
+
+            <!-- 2nd row: Three columns -->
+            <div class="row">
+              <!-- Crazy Jumper -->
+              <div class="col-sm-4 portfolio_item">
+                <img class="img-responsive" src="assets/images/crazyjumper/cover.jpg" alt="Crazy Jumper"/>
+              </div>
+              <!-- Adventure Island -->
+              <div class="col-sm-4 portfolio_item">
+                <img class="img-responsive" src="assets/images/3disland/cover.jpg" alt="Adventure Island"/>
+              </div>
+              <!-- Domination -->
+              <div class="col-sm-4 portfolio_item">
+                <img class="img-responsive" src="assets/images/domination/cover.jpg" alt="Domination"/>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <!-- Journal -->
+      <div class="tab-pane fade below-navbar" id="journal" >
+          <div class="container-fluid">
+              <h1 class="section-title">Journal</h1>
+          </div>
+      </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -84,5 +139,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/scroll.js"></script>
+
   </body>
 </html>
