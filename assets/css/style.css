@@ -105,7 +105,7 @@ body{
 
 /* Projects */
 .portfolio_item{
-  margin-bottom: 25px;  /* Used to add gap when screen is small in size */
+  padding:0;
 }
 
 /* Mobile first approach */
