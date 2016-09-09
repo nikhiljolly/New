@@ -42,7 +42,7 @@ body{
   border: 1px solid transparent; /* To avoid jerk on hover */
   background-color: transparent;
 }
-#myNavbar a:hover, #myNavbar a:focus{  /* Navbar links hover, focus & active class */
+#myNavbar a:hover, #myNavbar a:focus, #myNavbar .active a{  /* Navbar links hover, focus & active class */
   color: #428bca;
   border: 1px solid #428bca;
   background-color: transparent;
