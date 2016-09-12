@@ -2,6 +2,7 @@ body{
   background-color: #222;
 }
 
+/* Misc */
 /* Section Title */
 .section-title{
   color: white;
@@ -12,6 +13,16 @@ body{
 /* Section classes */
 .below-navbar{
   margin-top: 134px;
+}
+blockquote{
+  border: none;
+}
+hr{
+  width: 20px;
+  border-width: 2px;
+  border-color:#777;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 /*Home Navbar */
