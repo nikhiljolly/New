@@ -2,373 +2,265 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Nikhil Jolly</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap --><!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Source+Sans+Pro:300" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Custom styling -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default" id="myNavbar">
-      <div class="container-fluid">
-        <!-- Navbar Header on left -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="" class="navbar-brand">nikhil jolly</a>
-        </div>
-        <!-- Collapsable navbar -->
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <!-- Navbar right -->
-          <ul class="nav nav-pills navbar-nav navbar-right">
-            <li class="active"><a data-toggle="pill" href="#home">bio</a></li>
-            <li><a data-toggle="pill" href="#projects">projects</a></li>
-            <li><a data-toggle="pill" href="#journal">journal</a></li>
-          </ul>
-        </div>
-        <!-- Collapsabe navbar -->
+    <nav class="navbar navbar-expand-md navbar-light animated fadeIn" id="myNavbar">
+
+      <a class="navbar-brand" href="">Nikhil Jolly</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-personal-tab" data-toggle="pill" href="#pills-personal" role="tab" aria-controls="pills-personal" aria-selected="true">personal<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work" role="tab" aria-controls="pills-work" aria-selected="true">work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="true">about</a>
+          </li>
+        </ul>
       </div>
+
     </nav>
 
-    <!-- Used for tabs in navbar -->
-    <div class="tab-content">
+    <!-- Tabs content -->
 
-      <!-- Homepage: parallax and bio -->
-      <div class="tab-pane fade in active" id="home">
+    <div class="tab-content" id="pills-tabContent">
 
-        <!-- Parralax, header text container -->
-        <div class="parallax-container">
-          <!--Parallax Image-->
-          <div class="parallax-image"></div>
-          <!-- Heading -->
-          <h1>Nikhil Jolly</h1>
-        </div>
+      <!-- Personal -->
+      <div class="tab-pane animated fadeInUp show active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
 
-        <!-- Bio -->
-        <div class="container-fluid" id="bio">
+        <div class="container-fluid portfolio">
 
-          <!-- Bio brief -->
-          <div class="brief">
-            <blockquote>
-              <p>Pain is inexhaustible. It’s only people who get exhausted.</p>
-              <footer>Ray Velcoro in <cite>True Detective</cite></footer>
-            </blockquote>
-            <p class="text-justify">
-              Hi! I'm Nikhil Jolly, a game designer and programmer from India.
-              I aspire to be a renaissance man and am usually found juggling
-              between numerous things that I like to do.</br></br>
-              On a casual day, I spend my time developing games as a freelancer,
-              working on my personal projects and improving my art & composition skills.
-              And occasionally, I tend to tinker with new things and explore new places.</br></br>
-              More often than not, I spend a lot of time thinking,
-              listening to music, reading online and improving myself.
-            </p>
-            <hr>
-          </div>
-
-          <!-- Bio projects -->
-          <div class="projects">
-            <!-- 1st row: Three columns -->
-            <div class="row">
-              <!-- Domination -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/domination/cover.jpg" alt="Domination"/>
+          <div class="row">
+            <!-- tiny little boat -->
+            <div class="col-md-9">
+              <img src="assets/img/tinylittleboat/1.png" class="img-fluid" alt="tiny little boat">
+              <a href="posts/tinylittleboat.html">
                 <div class="overlay">
-                  <h1>Domination</h1>
-                  <h4>Solo (art/design/programming)</h4>
+                  <div class="text">
+                    <h3>tiny little boat</h3>
+                    <h6>Solo | Game Jam</h6>
+                  </div>
                 </div>
-              </div>
-              <!-- Mirrors -->
-              <div class="col-sm-4 portfolio_item hover_effect" id="mirrors">
-                <img class="img-responsive" src="assets/images/mirrors/cover.jpg" alt="Mirrors"/>
-                <div class="overlay">
-                  <h1>Mirrors</h1>
-                  <h4>Game Designer/Programmer</h4>
-                </div>
-              </div>
-              <!-- Pizza Craft -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/pizzacraft/cover.jpg" alt="Pizza Craft"/>
-                <div class="overlay">
-                  <h1>Pizza Craft</h1>
-                  <h4>Game Programmer</h4>
-                </div>
-              </div>
+              </a>
             </div>
-            <!-- 2nd row: Three columns -->
-            <div class="row">
-              <!-- Crazy Jumper -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/crazyjumper/cover.jpg" alt="Crazy Jumper"/>
+            <!-- Domination -->
+            <div class="col-md-3">
+              <img src="assets/img/domination/1.jpg" class="img-fluid" alt="Domination">
+              <a href="posts/domination.html">
                 <div class="overlay">
-                  <h1>Crazy Jumper</h1>
-                  <h4>Game Artist/Programmer</h4>
+                  <div class="text">
+                    <h3>Domination</h3>
+                    <h6>Solo | Indie</h6>
+                  </div>
                 </div>
-              </div>
-              <!-- Adventure Island -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/3disland/cover.jpg" alt="Adventure Island"/>
-                <div class="overlay">
-                  <h1>Adventure Island</h1>
-                  <h4>Game Designer/Programmer</h4>
-                </div>
-              </div>
-              <!-- Runout -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/runout/cover.jpg" alt="Run Out"/>
-                <div class="overlay">
-                  <h1>Run Out</h1>
-                  <h4>Game Designer/Programmer</h4>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
 
-          <!-- Bio resume -->
-          <div class="resume">
-
-            <!-- Work -->
-            <h2>work experience</h2>
-
-            <!-- Row 1: Indie -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p class="date">June 2014 - Now</p>
-              </div>
-              <div class="col-sm-8">
-                <p class="title">Indie Game Developer</p>
-              </div>
-              <div class="col-sm-2">
-                <p class="sub_title">Personal</h4>
-              </div>
+          <div class="row">
+            <!-- Game of life -->
+            <div class="col-md-4">
+              <img src="assets/img/gameoflife/cover.jpg" class="img-fluid" alt="Game of Life">
+              <a href="posts/gameoflife.html">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Game of Life</h3>
+                    <h6>Solo | Open source</h6>
+                  </div>
+                </div>
+              </a>
             </div>
-            <!-- Row 2: Indie -->
-            <div class="row">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-sm-8">
-                <p>Created - Domination</p>
-              </div>
-              <div class="col-sm-2">
-              </div>
+            <!-- Dead Dreams -->
+            <div class="col-md-8">
+              <img src="assets/img/deaddreams/5.png" class="img-fluid" alt="Dead Dreams">
+              <a href="posts/deaddreams.html">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Dead Dreams</h3>
+                    <h6>Game Designer/Developer | Game Jam</h6>
+                  </div>
+                </div>
+              </a>
             </div>
-
-            <!-- Row 1: Freelance -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p class="date">June 2014 - Now</p>
-              </div>
-              <div class="col-sm-8">
-                <p class="title">Freelance Game Developer</p>
-              </div>
-              <div class="col-sm-2">
-                <p class="sub_title">Fiverr.com</h4>
-              </div>
-            </div>
-            <!-- Row 2: Freelance -->
-            <div class="row">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-sm-8">
-                <p>Collaborated on Pizza Craft, Crazy Jumper, Run Out, etc.</p>
-              </div>
-              <div class="col-sm-2">
-              </div>
-            </div>
-
-            <!-- Educaton -->
-            <h2>education</h2>
-
-            <!-- Row 1: College -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p class="date">2012 - 2016</p>
-              </div>
-              <div class="col-sm-8">
-                <p class="title">Bachelor of Engineering</p>
-              </div>
-              <div class="col-sm-2">
-                <p class="sub_title">Chitkara University</h4>
-              </div>
-            </div>
-            <!-- Row 2: College -->
-            <div class="row">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-sm-8">
-                <p>Major - Computer Science and Technology</p>
-                <p>CGPA: 7.37/10</p>
-              </div>
-              <div class="col-sm-2">
-              </div>
-            </div>
-
-            <!-- Projects -->
-            <h2>projects</h2>
-
-            <!-- Row 1: Mirrors -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p class="date">June - Aug 2016</p>
-              </div>
-              <div class="col-sm-8">
-                <p class="title">Mirrors (PC)</p>
-              </div>
-              <div class="col-sm-2">
-                <p class="sub_title">Freelancing</h4>
-              </div>
-            </div>
-            <!-- Row 2: Mirrors -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p><em>Unity3d</em></p>
-              </div>
-              <div class="col-sm-8">
-                <p><em>Game Designer/Programmer</em></p>
-                <p>Worked on a minimalistic 3d first person, puzzle-platform game inspired from the popular game, Portal.</p>
-              </div>
-              <div class="col-sm-2">
-              </div>
-            </div>
-
-            <!-- Row 1: Chop Wood -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p class="date">June 2016 - Now</p>
-              </div>
-              <div class="col-sm-8">
-                <p class="title">Chop Wood (iOS/Android)</p>
-              </div>
-              <div class="col-sm-2">
-                <p class="sub_title">Freelancing</h4>
-              </div>
-            </div>
-            <!-- Row 2: Chop Wood -->
-            <div class="row">
-              <div class="col-sm-2">
-                <p><em>Unity3d</em></p>
-              </div>
-              <div class="col-sm-8">
-                <p><em>Game Programmer</em></p>
-                <p>Working on an undisclosed game for Sage Realities. More at chopwoodgame.com</p>
-              </div>
-              <div class="col-sm-2">
-              </div>
-            </div>
-
-
           </div>
 
-
         </div>
 
-      </div> <!-- Homepage end -->
-
-      <!-- Projects Full -->
-      <div class="tab-pane fade below-navbar" id="projects">
-        <div class="container-fluid">
-
-            <h1 class="section-title">Projects</h1>
-
-            <!-- 1st row: Three columns -->
-            <div class="row">
-              <!-- Domination -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/domination/cover.jpg" alt="Domination"/>
-                <div class="overlay">
-                  <h1>Domination</h1>
-                  <h4>Solo (art/design/programming)</h4>
-                </div>
-              </div>
-              <!-- Mirrors -->
-              <div class="col-sm-4 portfolio_item hover_effect" id="mirrors">
-                <img class="img-responsive" src="assets/images/mirrors/cover.jpg" alt="Mirrors"/>
-                <div class="overlay">
-                  <h1>Mirrors</h1>
-                  <h4>Game Designer/Programmer</h4>
-                </div>
-              </div>
-              <!-- Pizza Craft -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/pizzacraft/cover.jpg" alt="Pizza Craft"/>
-                <div class="overlay">
-                  <h1>Pizza Craft</h1>
-                  <h4>Game Programmer</h4>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2nd row: Three columns -->
-            <div class="row">
-              <!-- Crazy Jumper -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/crazyjumper/cover.jpg" alt="Crazy Jumper"/>
-                <div class="overlay">
-                  <h1>Crazy Jumper</h1>
-                  <h4>Game Artist/Programmer</h4>
-                </div>
-              </div>
-              <!-- Adventure Island -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/3disland/cover.jpg" alt="Adventure Island"/>
-                <div class="overlay">
-                  <h1>Adventure Island</h1>
-                  <h4>Game Designer/Programmer</h4>
-                </div>
-              </div>
-              <!-- Runout -->
-              <div class="col-sm-4 portfolio_item hover_effect">
-                <img class="img-responsive" src="assets/images/runout/cover.jpg" alt="Run Out"/>
-                <div class="overlay">
-                  <h1>Run Out</h1>
-                  <h4>Game Designer/Programmer</h4>
-                </div>
-              </div>
-            </div>
-
-        </div>
       </div>
 
-      <!-- Journal -->
-      <div class="tab-pane fade below-navbar" id="journal" >
-          <div class="container-fluid">
-              <h1 class="section-title">Journal</h1>
+      <!-- Work -->
+      <div class="tab-pane animated fadeInUp" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
+
+        <div class="container-fluid portfolio">
+
+          <div class="row">
+            <!-- Pizza Craft -->
+            <div class="col-md-7">
+              <img src="assets/img/pizzacraft/1.png" class="img-fluid" alt="Pizza Craft">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Pizza Craft</h3>
+                  <h6>Game Developer</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Chop Wood -->
+            <div class="col-md-5">
+              <img src="assets/img/chopwood/1.png" class="img-fluid" alt="Chop Wood">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Chop Wood</h3>
+                  <h6>Game Developer</h6>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="row">
+            <!-- Chop Wood Zen Master -->
+            <div class="col-md-3">
+              <img src="assets/img/chopwoodzen/1.jpg" class="img-fluid" alt="Chop Wood Zen Master">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Chop Wood Zen Master</h3>
+                  <h6>Game Developer</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Mirrors -->
+            <div class="col-md-6">
+              <img src="assets/img/reflections/cover.jpg" class="img-fluid" alt="Mirrors">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Mirrors</h3>
+                  <h6>Solo</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Wrong Lane -->
+            <div class="col-md-3">
+              <img src="assets/img/wronglane/1.png" class="img-fluid" alt="Wrong Lane">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Wrong Lane</h3>
+                  <h6>Solo</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Crazy Jumper -->
+            <div class="col-md-6">
+              <img src="assets/img/crazyjumper/cover.jpg" class="img-fluid" alt="Crazy Jumper">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Crazy Jumper</h3>
+                  <h6>Solo</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Adventure Island -->
+            <div class="col-md-6">
+              <img src="assets/img/3disland/cover.jpg" class="img-fluid" alt="Adventure Island">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Adventure Island</h3>
+                  <h6>Solo</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
+
+      <!-- About -->
+      <div class="tab-pane animated fadeInUp" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+
+        <div class="container-fluid" id="about">
+
+          <div class="row">
+            <!-- About Image -->
+            <div class="col-lg-5" id="about-img">
+            </div>
+            <!-- About Text -->
+            <div class="col-lg-7" id="about-text">
+
+                <h1>About me</h1><br>
+
+                <h6>Falling in love just a little bit more, each and every passing day, with the things that I like.</h6><br>
+
+                <p>Yello stranger! In an age like ours we should all be renaissance men. I, for one, aspire to be.</p>
+
+                <p>On a casual day, I develop games as a freelancer, work on my personal projects and improve my art & composition skills. And occasionally, I tend to tinker with new things and explore new places.</p>
+
+                <p>More often than not, I spend a lot of time thinking, taking a stroll down the road, listening to music, unashamedly dancing, reading stuff online and of-course improving myself. </p>
+
+                <p>Stranger! Wherefore art thou a stranger? Hit me up at:</p>
+
+                <a href="mailto:nikhil.jolly30@gmail.com"><span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span></a>
+
+                <a href="https://twitter.com/nikhil_jolly"><span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span></a>
+
+                <a href="https://www.linkedin.com/in/nikhiljolly"><span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span></a>
+
+                <br><br>
+                <p>PS: Mostly showcasing my game design and deveopment projects here.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
 
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
-    <script src="assets/js/navhash.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- Custom js -->
+    <script src="https://use.fontawesome.com/4a097e36cd.js"></script>
+
 
   </body>
+
 </html>
