@@ -1,0 +1,8 @@
+/* CSS3 Animations */
+@keyframes slideUp {
+  from{transform:translate3d(0,100%,0);}
+  to{transform: none;}
+}
+.slideUp{
+  animation: slideUp 1s;
+}
