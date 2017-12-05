@@ -1,31 +1,30 @@
 /* Navbar */
 #myNavbar{
-  /*Postioning*/
-  position: absolute; /* So that collapsed nav overlaps everything instead of pushing it down */
-  top: 0;
-  width: 100%;
-  z-index: 1; /* To show it above all other content */
-
   /* Styling */
-  padding: 3rem 4rem 0 4rem;
+  padding: 2rem 4vw 0 4vw;
 }
 .navbar-brand{
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-right: 0.5rem;
 }
 .nav-item{
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
-#navbarNav{
-  padding-left: 2rem;
+#myNavbar .nav-link.active{
+  color: black;
+  background-color: #f2f2f2;
 }
 
 /* Portfolio */
 .portfolio{
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0 4vw 4vw 4vw;
 }
 .portfolio div[class^="col"]{
   padding: 1rem;
   position: relative;
+}
+.portfolio .last-col{
+  padding-bottom: 0rem !important;
 }
 .portfolio img{
   display: block;
@@ -42,12 +41,15 @@
   transition: .5s ease;
   background-color: #f2f2f2;
 }
+.portfolio .last-col .overlay{
+  bottom: 0rem !important;
+}
 .portfolio .text {
   color: black;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);portfolio
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -59,8 +61,8 @@
 }
 
 /* About */
-#about{
-  padding: 2rem;
+#about .container-fluid{
+  padding: 1rem 4vw 4vw 4vw;
   background-color: #f2f2f2;
   background-clip: content-box;
 }
