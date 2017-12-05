@@ -21,21 +21,25 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light fadeIn" id="myNavbar">
 
+      <!-- Brand -->
       <a class="navbar-brand" href="">Nikhil Jolly</a>
 
+      <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Toggle Pills -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav navbar-nav nav-pills" id="pills-tab" role="tablist">
+        <ul class="nav navbar-nav ml-auto nav-pills nav-fill" id="pills-tab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="pills-personal-tab" data-toggle="pill" href="#pills-personal" role="tab" aria-controls="pills-personal" aria-selected="true">personal<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" id="personal-tab" data-toggle="pill" href="#personal" role="tab" aria-controls="personal" aria-selected="true">personal<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-work-tab" data-toggle="pill" href="#pills-work" role="tab" aria-controls="pills-work" aria-selected="true">work</a>
+            <a class="nav-link" id="work-tab" data-toggle="pill" href="#work" role="tab" aria-controls="work" aria-selected="false">work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="true">about</a>
+            <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="false">about</a>
           </li>
         </ul>
       </div>
@@ -47,15 +51,15 @@
     <div class="tab-content" id="pills-tabContent">
 
       <!-- Personal -->
-      <div class="tab-pane active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+      <div class="tab-pane active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
 
-        <div class="container-fluid slideUp portfolio">
+        <div class="container-fluid fadeIn portfolio">
 
           <div class="row">
             <!-- tiny little boat -->
             <div class="col-md-9">
               <img src="assets/img/tinylittleboat/1.png" class="img-fluid" alt="tiny little boat">
-              <a href="posts/tinylittleboat.html">
+              <a href="posts/personal/tinylittleboat.html">
                 <div class="overlay">
                   <div class="text">
                     <h3>tiny little boat</h3>
@@ -67,7 +71,7 @@
             <!-- Domination -->
             <div class="col-md-3">
               <img src="assets/img/domination/1.jpg" class="img-fluid" alt="Domination">
-              <a href="posts/domination.html">
+              <a href="posts/personal/domination.html">
                 <div class="overlay">
                   <div class="text">
                     <h3>Domination</h3>
@@ -80,9 +84,9 @@
 
           <div class="row">
             <!-- Game of life -->
-            <div class="col-md-4">
+            <div class="col-md-4 last-col">
               <img src="assets/img/gameoflife/cover.jpg" class="img-fluid" alt="Game of Life">
-              <a href="posts/gameoflife.html">
+              <a href="posts/personal/gameoflife.html">
                 <div class="overlay">
                   <div class="text">
                     <h3>Game of Life</h3>
@@ -92,9 +96,9 @@
               </a>
             </div>
             <!-- Dead Dreams -->
-            <div class="col-md-8">
+            <div class="col-md-8 last-col">
               <img src="assets/img/deaddreams/5.png" class="img-fluid" alt="Dead Dreams">
-              <a href="posts/deaddreams.html">
+              <a href="posts/personal/deaddreams.html">
                 <div class="overlay">
                   <div class="text">
                     <h3>Dead Dreams</h3>
@@ -110,15 +114,15 @@
       </div>
 
       <!-- Work -->
-      <div class="tab-pane" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab">
+      <div class="tab-pane" id="work" role="tabpanel" aria-labelledby="work-tab">
 
-        <div class="container-fluid slideUp portfolio">
+        <div class="container-fluid fadeIn portfolio">
 
           <div class="row">
             <!-- Pizza Craft -->
             <div class="col-md-7">
               <img src="assets/img/pizzacraft/cover.png" class="img-fluid" alt="Pizza Craft">
-              <a href="posts/pizzacraft.html">
+              <a href="posts/work/pizzacraft.html">
                 <div class="overlay">
                   <div class="text">
                     <h3>Pizza Craft</h3>
@@ -130,7 +134,7 @@
             <!-- Chop Wood -->
             <div class="col-md-5">
               <img src="assets/img/chopwood/cover.png" class="img-fluid" alt="Chop Wood">
-              <a href="posts/chopwood.html">
+              <a href="posts/work/chopwood.html">
                 <div class="overlay">
                   <div class="text">
                     <h3>Chop Wood</h3>
@@ -202,9 +206,9 @@
       </div>
 
       <!-- About -->
-      <div class="tab-pane" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+      <div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab">
 
-        <div class="container-fluid slideUp" id="about">
+        <div class="container-fluid fadeIn">
 
           <div class="row">
             <!-- About Image -->
@@ -261,6 +265,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <!-- Custom js -->
+    <script src="js/script.js"></script>
     <script src="https://use.fontawesome.com/4a097e36cd.js"></script>
 
 
