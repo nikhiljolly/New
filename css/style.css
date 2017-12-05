@@ -61,13 +61,13 @@
 }
 
 /* About */
-#about .container-fluid{
+#about{
   padding: 1rem 4vw 4vw 4vw;
   background-color: #f2f2f2;
   background-clip: content-box;
 }
 #about-img{
-  background-image: url('../assets/img/nikhil.jpg');
+  background-image: url('../about/nikhil.jpg');
   background-clip: content-box;
   background-size: cover;
   background-position: center;
