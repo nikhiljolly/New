@@ -1,7 +1,10 @@
+body{
+  padding: 2rem 4vw 0 4vw;
+}
+
 /* Navbar */
 #myNavbar{
-  /* Styling */
-  padding: 2rem 4vw 0 4vw;
+  padding: 0;
 }
 .navbar-brand{
   font-size: 2rem;
@@ -12,19 +15,19 @@
 }
 #myNavbar .nav-link.active{
   color: black;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
 }
 
 /* Portfolio */
 .portfolio{
-  padding: 0 4vw 4vw 4vw;
+  padding:0;
 }
 .portfolio div[class^="col"]{
   padding: 1rem;
   position: relative;
 }
-.portfolio .last-col{
-  padding-bottom: 0rem !important;
+.portfolio .last-row div[class^="col"]{
+  /* padding-bottom: 0rem; */
 }
 .portfolio img{
   display: block;
@@ -39,10 +42,10 @@
   right: 1rem;
   opacity: 0;
   transition: .5s ease;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
 }
-.portfolio .last-col .overlay{
-  bottom: 0rem !important;
+.portfolio .last-row .overlay{
+  /* bottom: 0rem; */
 }
 .portfolio .text {
   color: black;
@@ -62,9 +65,10 @@
 
 /* About */
 #about{
-  padding: 1rem 4vw 4vw 4vw;
-  background-color: #f2f2f2;
+  padding: 1rem 0 0 0;
+  background-color: #f3f3f3;
   background-clip: content-box;
+  margin-bottom: 2rem;
 }
 #about-img{
   background-image: url('../about/nikhil.jpg');
@@ -82,18 +86,42 @@
 
 /* Post */
 .post{
-  padding: 2rem;
-  background-color: #f2f2f2;
-  background-clip: content-box;
+  padding: 0;
+  margin-bottom: 2rem;
+  /* background-color: #f3f3f3;
+  background-clip: content-box; */
 }
 .post .row{
   justify-content: center;
 }
+.post .video-col{
+  text-align: center;
+}
+.post .title{
+  padding-bottom: 1rem;
+}
+.post .btn{
+  margin-top: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0;
+}
 .post-text{
-  padding:2rem;
+  padding:1rem;
 }
 .post-carousel{
-  display:flex;
-  justify-content:center;
-  flex-flow: column;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+/* 404 */
+.lost{
+  text-align: center;
 }
